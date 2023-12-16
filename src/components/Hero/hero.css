@@ -88,6 +88,8 @@ gap: 1.8rem;
         width: 50%;
     }
 }
+
+
 @media screen and (max-width: 428px) {
     .text-hero{
         width: 90%;

@@ -29,7 +29,7 @@ nav{
     /* border: 2px solid black; */
 }
 .menu{
-    width: 60%;
+    width: 35%;
     margin-top: 4px;
 }
 .menu ul{
@@ -44,6 +44,13 @@ nav{
 .menu>ul>li{
     list-style: none;
     text-transform: capitalize;
+}
+.menu a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.menu a:active{
+    color: #0095ff;
 }
 .get-started{
     text-transform: capitalize;
@@ -83,6 +90,9 @@ nav{
     }
     .mobile{
         display: block;
+        margin: 5px;
+        font-size: 1.5rem;
+        font-weight: 600;
         
     }
 }

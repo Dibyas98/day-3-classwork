@@ -1,5 +1,6 @@
+
 .grid-card{
-    width:350px;
+    width:90%;
     height: auto;
 
 }
@@ -7,6 +8,8 @@
     padding: 20px;
     width: 100%;
     background-color: #F9FAFB;
+    box-shadow: 2px 6px 25px 0px #00000099;
+    border-radius: 5px;
 
 }
 .grid-logo{
@@ -14,10 +17,23 @@
     padding: 20px;
     gap: 1.5rem;
     width: 70%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .grid-logo img{
     width: 50px;
     border-radius: 50%;
     height: 50px;
+}
+.grid-logo h6{
+    font-size: 1rem;
+}
+/* dispaly for mobile */
+@media screen and (max-width: 428px) {
+    .grid-card{
+        width: 90%;
+    }
+    .grid-logo img{
+        width: 30px;
+        height: 30px;
+    }
 }

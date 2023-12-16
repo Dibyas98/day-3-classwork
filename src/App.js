@@ -4,6 +4,8 @@ import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import Card from './components/card/Card'
 import GridCard from './components/grid/GridCard';
+import Grid_com from './components/grid/Grid_com';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
     <Nav></Nav>
     <Hero></Hero>
     <Card></Card>
-    <GridCard name='jjfgj'></GridCard>
+    <Grid_com></Grid_com>
+    <Footer></Footer>
     </>
   );
 }
