@@ -1,6 +1,6 @@
 
 .grid-card{
-    width:90%;
+    width:100%;
     height: auto;
 
 }
@@ -8,7 +8,7 @@
     padding: 20px;
     width: 100%;
     background-color: #F9FAFB;
-    box-shadow: 2px 6px 25px 0px #00000099;
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
     border-radius: 5px;
 
 }

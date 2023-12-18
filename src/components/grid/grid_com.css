@@ -1,10 +1,17 @@
 
 .grid{
-    padding-left: 5%;
+    /* width: 85%; */
+    padding:0 10%;
+    justify-content: center;
     display: grid;
-    column-gap: 0.5rem;
-    grid-template-columns: repeat(3,0.8fr);
-    row-gap: 1rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    /* row-gap: 1rem; */
+    /* border: 2px solid black; */
+}
+.left-side{
+    display: grid;
+    justify-items: center;
 }
 /* dispaly for mobile */
 @media screen and (max-width: 428px) {
