@@ -1,9 +1,13 @@
 import React from "react";
 import "./nav.css";
-const st ={
+import Switch from "../switch/Switch";
+const home ={
   color: 'blue'
 }
+const MenuOption = ['home','quotas','resturant','food','contact'];
+
 export default function Nav() {
+
   return (
     <nav>
       <div className="nav-container">
@@ -15,16 +19,29 @@ export default function Nav() {
 
         <div className="menu">
           <ul>
+          {
+            MenuOption.map((ele, index) => (
+              <li key={index} className={ele}>
+                <a href={`${ele}`} style={ele === 'home' ? home : {}}>{ele}</a>
+              </li>
+            ))
+          
+          
+          
+          /* <ul ClassName = 'menu-ul'>
             <li><a href="#" style={st}>home</a></li>
             <li><a href="">quotas</a></li>
             <li><a href="">resturant</a></li>
             <li><a href="">food</a></li>
             <li><a href="">contact</a></li>
+          </ul> */}
+          {/* {NavBarList} */}
           </ul>
         </div>
         <div className="get-started">
           <button>get Started</button>
         </div>
+        <Switch> </Switch>
       </div>
       <div className="mobile">
             <i className="fa-solid fa-bars"></i>

@@ -48,6 +48,7 @@ nav{
 .menu a{
     text-decoration: none;
     font-weight: 600;
+    color: black;
 }
 .menu a:active{
     color: #0095ff;
@@ -95,5 +96,9 @@ nav{
         font-weight: 600;
         
     }
+    /* .nav-container{
+    
+        padding: 0;
+    } */
 }
 
