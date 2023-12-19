@@ -15,6 +15,7 @@ nav{
     top: 0;
     background-color: white;
     z-index: 100;
+    color: #fff;
 }
 .nav-container{
     display: flex;
@@ -48,7 +49,7 @@ nav{
 .menu a{
     text-decoration: none;
     font-weight: 600;
-    color: black;
+    /* color: black; */
 }
 .menu a:active{
     color: #0095ff;
@@ -81,6 +82,21 @@ nav{
   touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
+}
+.lightback{
+    
+    background-color: black;
+}
+.darkback{
+    
+    background-color: white;
+    
+}
+.lighttext{
+    color: white;
+}
+.darktext{
+    color: black;
 }
 .mobile{
     display: none;

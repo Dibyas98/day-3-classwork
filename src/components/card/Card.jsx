@@ -2,10 +2,10 @@ import React from "react";
 import "./card.css";
 import card_1 from "./card-1.avif";
 
-export default function Card() {
+export default function Card(props) {
   return (
-    <div className="card">
-      <div className="right-card">
+    <div className= {`card ${props.mode}back`}>
+      <div className= {`right-card`}>
         <div className="right-card-text">
           <h1>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,

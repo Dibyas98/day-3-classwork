@@ -78,6 +78,21 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+.lightback{
+    
+    background-color: black;
+}
+.darkback{
+    
+    background-color: white;
+    
+}
+.lighttext{
+    color: white;
+}
+.darktext{
+    color: black;
+}
 
 
 @media screen and (max-width: 428px){

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import Switch from "../switch/Switch";
 const home ={
@@ -6,10 +6,11 @@ const home ={
 }
 const MenuOption = ['home','quotas','resturant','food','contact'];
 
-export default function Nav() {
+export default function Nav(props) {
+
 
   return (
-    <nav>
+    <nav className= {`${props.mode}back`}>
       <div className="nav-container">
         <div className="logo">
           <img src="https://flowbite.com/docs/images/logo.svg" alt="" />
@@ -21,8 +22,8 @@ export default function Nav() {
           <ul>
           {
             MenuOption.map((ele, index) => (
-              <li key={index} className={ele}>
-                <a href={`${ele}`} style={ele === 'home' ? home : {}}>{ele}</a>
+              <li key={index} >
+                <a href={ele} className= {`${props.mode}text`} style={ele === 'home' ? home : {}}>{ele}</a>
               </li>
             ))
           
@@ -41,7 +42,7 @@ export default function Nav() {
         <div className="get-started">
           <button>get Started</button>
         </div>
-        <Switch> </Switch>
+        <Switch  toggle = {props.toggle}> </Switch>
       </div>
       <div className="mobile">
             <i className="fa-solid fa-bars"></i>

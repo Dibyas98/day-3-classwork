@@ -13,6 +13,21 @@
     display: grid;
     justify-items: center;
 }
+.lightback{
+    
+    background-color: black;
+}
+.darkback{
+    
+    background-color: white;
+    
+}
+.lighttext{
+    color: white;
+}
+.darktext{
+    color: black;
+}
 /* dispaly for mobile */
 @media screen and (max-width: 428px) {
     .grid{

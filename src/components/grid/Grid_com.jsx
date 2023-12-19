@@ -2,9 +2,9 @@ import React from 'react'
 import GridCard from './GridCard'
 import './grid_com.css'
 
-export default function Grid_com() {
+export default function Grid_com(props) {
   return (
-    <div className='grid'>
+    <div  className= {`grid ${props.mode}back`}>
       <div className="left-side">
       <GridCard about='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dicta amet, molestiae aliquam incidunt suscipit recusandae labore ratione doloremque, architecto et illo minus quo tenetur ducimus, voluptatibus repellendus fuga aperiam vel ab! Ipsam corrupti blanditiis dolorum! Officia assumenda rem nam, eveniet enim ad inventore laudantium est illum voluptatem quis.'></GridCard>
       <GridCard about='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum.'></GridCard>
