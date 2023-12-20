@@ -22,8 +22,8 @@ export default function Nav(props) {
           <ul>
           {
             MenuOption.map((ele, index) => (
-              <li key={index} >
-                <a href={ele} className= {`${props.mode}text`} style={ele === 'home' ? home : {}}>{ele}</a>
+              <li key={index}  >
+                <a href={ele} className= {`menu ${props.mode}text`} style={ele === 'home' ? home : {}} onClick={props.menu}>{ele}</a>
               </li>
             ))
           
